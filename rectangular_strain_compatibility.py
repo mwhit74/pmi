@@ -31,12 +31,10 @@ pm = []
 #curvature limits
 psy_start = ecu/0.01
 psy_end = 0.0
-num_step = 100
+num_step = 10000
 psy_step = (psy_start - psy_end)/num_step
 
 psy = psy_start
-
-print "psy step: " + str(psy_step)
 
 c = []
 psy = []
@@ -47,10 +45,9 @@ for x in range(num_step):
         psy.append(psy_start)
     else:
         psy.append(psy[x-1] - psy_step)
-    c.append(ecu/(psy[x]))    #neutral axis
+    c.append(math.log(ecu/(psy[x]),10))    #neutral axis
     
-plt.plot(c,psy)
-
+plt.plot(c,psy,".")
 plt.show()
 
 '''    

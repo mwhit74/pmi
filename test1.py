@@ -13,10 +13,10 @@ for x in range(num_steps):
     if x == 0:
         c.append(c_step)
     else:
-        c.append(c[x-1] + c_step)
-    phi.append(0.003/c[x])
+        c.append((c[x-1] + c_step))
+    phi.append(math.log(0.003/c[x],10))
     
-plt.plot(phi,c)
+plt.plot(c,phi,".")
 
 plt.show()
     
