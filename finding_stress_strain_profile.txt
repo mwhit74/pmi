@@ -1,0 +1,16 @@
+A similar problem to find the PM interaction diagram is finding the stress and
+strain profile on a cross-section given a P-M demand value. This is useful in
+determining whether or not the section has failed, the speific stresses in the
+different layers or individual pieces of steel, and the stress and strain in the
+concrete.
+
+This can be accomplished by selecting a value of c and phi then calculating the
+corresponding P-M values. Checking to see if it is correct then changing the
+values of c and phi to move towards a solution. I think selection of the new c
+and phi is a bit more involved to get the program to iterate to a solution but
+it is not overly complicated. 
+
+I wanted to record my thought here before moving back to another project. Since
+this is related I wanted to incorporate it here for now. I think eventually this
+will be its own package or at least its own module in a concrete analysis
+package. This is yet to be determined. 
