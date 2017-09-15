@@ -40,9 +40,9 @@ for x in range(num_steps):
 
     out = ('c: {8}\na: {0}\nes: {1}\nfs: {2}\nesp: {3}\nfsp: {4}\nC: {5}\nPn:'
         '{6}\nMn: {7}'.format(a,es,fs,esp,fsp,C,Pn,Mn,c))
-    print out
+    #print out
 
-    pause = raw_input(">")
+    #pause = raw_input(">")
 
     P.append(Pn)
     M.append(Mn)
